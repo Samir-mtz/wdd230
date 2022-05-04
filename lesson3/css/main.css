@@ -43,6 +43,7 @@ h1{
     font-family: 'Merriweather', serif;
     text-align: center;
     color:#f16e80;
+    text-shadow: 1px 1px 1px black;
 }
 h2, h3, nav{
     font-family: 'Rubik', sans-serif;
