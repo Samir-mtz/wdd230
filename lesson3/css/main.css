@@ -50,6 +50,9 @@ h2, h3, nav{
 h2, h3{
     margin-bottom:2%;
 }
+p{
+    text-align: justify;
+}
 #first-item{
     margin-top: 5%;
 }
