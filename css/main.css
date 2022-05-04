@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     max-width: 600px;
@@ -23,6 +24,7 @@ header img{
 }
 header h1{
     align-self: center;
+    font-family: 'Bebas Neue', cursive;
     color: #fff;
 }
 
@@ -32,6 +34,9 @@ main{
     padding:5%;
 }
 
+main h2{
+    font-family: 'Bebas Neue', cursive;
+}
 #update{
     color: rgb(255, 236, 116);
 }

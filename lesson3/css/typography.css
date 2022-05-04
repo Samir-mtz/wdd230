@@ -1,0 +1,17 @@
+table th, td{
+    padding:10px;
+    border:1px solid #000;
+}
+table tr td{
+    background-color: #f16e80;
+    color: #fff;
+}
+
+table tr :nth-child(1){
+    background-color: #172B4D;
+    color: #fff;
+}
+table tr :nth-child(3){
+    background-color: antiquewhite;
+    color: #000;
+}
