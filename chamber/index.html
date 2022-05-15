@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/small.css">
+    <script src="js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&family=Rubik&display=swap" rel="stylesheet">
     <title>Home - Mexico Chamber of commerce</title>
 </head>
-<body>
+<body onload="setUpdate()">
     <header>
         <div id="cell">
             <ul>
@@ -41,7 +42,7 @@
         </div>
         <button id="menu"><img src="images/menu.png" alt="menu" onclick="getMenu()"></button>
         <div id="date">
-            <p>Some text</p>
+            <p id="now">Some text</p>
         </div>
     </header>
 
@@ -74,23 +75,8 @@
             <p>⬇ Location  map </p>
         </div>
         <div id="footer-info">
-            <p>&copy; 2022 | Armando S. Martinez Islas | Mexico</p>
-            <p id="update"></p>
+            <p id="update">&copy; 2022 Chamber Mexico | Armando Martinez| WDD 230 Project| </p>
         </div>
     </footer>
-    <script>
-        function getMenu(){
-            let b = document.querySelector('body');
-            let selector = document.querySelector('#cell');
-            selector.style= "display: block; position: absolute";
-            b.style="overflow: hidden";
-        }
-        function hideMenu(){
-            let b = document.querySelector('body');
-            let selector = document.querySelector('#cell');
-            selector.style= 'display: none';
-            b.style="overflow: scroll";
-        }
-    </script>
 </body>
 </html>
