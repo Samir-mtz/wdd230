@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(movies_list/images/wallpaper.jpg);
+    background-image: url('./movies_list/images/wallpaper.jpg');
     background-size:cover;                   
     background-repeat:no-repeat;
     background-position: top;
