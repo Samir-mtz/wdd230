@@ -6,25 +6,32 @@ let input = document.querySelector('input');
 
 let add = () => {
     let Item = input.value;
-    input.value = '';
 
-    const listItem = document.createElement('li');
-    const listText = document.createElement('span');
-    const listBtn = document.createElement('button');
+    if(input.value!==""){
+        input.value = '';
+        const listItem = document.createElement('li');
+        const listText = document.createElement('span');
+        const listBtn = document.createElement('img');
+        const listA = document.createElement('a');
 
-    listItem.appendChild(listText);
-    listText.textContent = Item;
-    listItem.appendChild(listBtn);
-    listBtn.textContent = 'Delete';
-    listItem.style="text-align: center";
-    list.appendChild(listItem);
+        listItem.appendChild(listText);
+        listText.textContent = Item;
+        listBtn.src = 'images/exit.png';
+        listA.appendChild(listBtn);
+        listItem.appendChild(listA);
+        listItem.style="text-align: center";
+        list.appendChild(listItem);
 
-    listBtn.addEventListener('click', () => {
-        list.removeChild(listItem);
-    });
-
-    input.focus();
+        listBtn.addEventListener('click', () => {
+            list.removeChild(listItem);
+        });
+        input.focus();
+    }else{
+        alert("Please enter a movie name");
+        input.focus();
+    }
+    
 }
-
 button.addEventListener("click", add);
+
 

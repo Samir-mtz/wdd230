@@ -1,9 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(/images/wallpaper.jpg);
-    background-size:cover;                   
-    background-repeat:no-repeat;
-    background-position: top;
+    background:#666
 }
 h1{
     color:#fff;
@@ -23,11 +20,13 @@ li {
     border-radius:10px;
     margin-top: 5px;
 }
-
-li button {
-    font-size: 12px;
-    margin-left: 20px;
-    color: #666;
+li a img{
+    width: 20px;
+    margin-left: 5%;
+    vertical-align: middle;
+}
+li a img:hover{
+    cursor: pointer;
 }
 div{
     padding:2%;
