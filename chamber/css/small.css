@@ -52,14 +52,18 @@
     }
     #content{
         display:block;
-        height: auto;
+        height: 100%;
     }
     .container{
         margin-top:2%;
-        
     }
-    .container p{
-        height: 150px;
+    #hero{
+        height:30vh;
+    }
+    #joinChamber{
+        position: relative;
+        left:60%;
+        top:35%;
     }
     
     nav li{

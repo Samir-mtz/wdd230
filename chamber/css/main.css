@@ -4,7 +4,9 @@
     font-family: 'Roboto', sans-serif;
     
 }
-
+p{
+    font-size:12px;
+}
 header{
     background-color:#172B4D;
     display: flex;
@@ -12,6 +14,11 @@ header{
     align-items: center;
     justify-content: space-around;
 }
+#message{
+    text-align: center;
+    display:none;
+}
+
 #logo{
     width: 15%;
     padding:10px;
@@ -47,6 +54,9 @@ nav li a:hover{
     justify-content:center;
     text-align: center;
 }
+#now{
+    font-size: 18px;
+}
 #date{
     display: block;
     padding:10px;
@@ -73,7 +83,7 @@ main{
     margin-top: 3%;
 }
 #content{
-    height: 80vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 33% 33% 33%;
@@ -85,34 +95,124 @@ h1{
     color:#f16e80;
     text-shadow: 1px 1px 1px black;
 }
-#content :nth-child(1){
-    grid-area: 1/1/2/2;
-}
-#content :nth-child(2){
-    grid-area: 2/1/3/2;
-}
-#content :nth-child(3){
-    grid-area: 3/1/4/2;
-}
-#content :nth-child(4){
-    grid-area: 1/2/3/3;
-}
-#content :nth-child(5){
-    grid-area: 3/2/4/3;
-}
-#content :nth-child(6){
-    grid-area: 1/3/4/4;
-}
 .container{
     background-color:bisque;
     height:100%;
 }
+#hero{
+    grid-area: 1/2/3/3;
+    background-image: url('/images/hero.jpg');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#joinChamber{
+    position: relative;
+    left:70%;
+    top:60%;
+    
+}
+.btn{
+    padding:2%;
+    border-radius:10px;
+    border:none;
+    background-color: #f16e7fc7;
+    text-shadow: 1px 1px 2px black;
+    color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+    
+}
+.btn:hover{
+    background-color: #f16e80;
+    text-shadow: none;
+    cursor:pointer;
+}
+/*Event*/
+#event{
+    grid-area: 1/1/2/2;
+    text-align: center;
+    display:grid;
+}
+#event a, #event p, #event h3{
+    height: min-content;
+    align-self: center;
+    padding:10px;
+}
+#event p{
+    text-align: justify;
+    font-size:12px;
+}
+#event a{
+    font-size:12px;
+    color:#f16e80;
+}
+#event h3{
+    
+}
+/*End event*/
+/*Weather*/
+#weather{
+    grid-area: 2/1/3/2;
+}
+#icon-status{
+    margin:0 auto;
+    margin-top: 5px;
+    display: block;
+    width:20%;
+}
+#description, #status{
+    display: inline-block;
+}
+#weather h3, h4{
+    text-align:center;
+    margin-top: 5px;
+}
+.small-data{
+    font-size: 12px;
+    margin-left: 5px;
+    padding:5px;
+}
+/*End weather*/
+/*New Release*/
+#newRelease{
+    grid-area: 3/2/4/3;
+    display: grid;
+}
+#newRelease p,#newRelease h3{
+    align-self: center;
+    justify-self: center;
+    text-align: justify;
+
+}
+/*End new Release*/
+/*Start Join*/
+#join{
+    grid-area: 3/1/4/2;
+    display:grid;
+    
+}
+#join h3, #join button{
+    height: min-content;
+    align-self: center;
+    justify-self: center;
+    padding:10px;
+    
+}
+#join p{
+    text-align: center;
+}
+#join button{
+    border-radius: 10px;
+    
+}
+/*End Join*/
 div p{
     padding:10px;
 }
 #spot{
+    grid-area: 1/3/4/4;
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows:  min-content min-content min-content;
 }
 #spot div{
     width:90%;
@@ -120,6 +220,14 @@ div p{
     justify-self: center;
     margin-top:10px;
     margin-bottom:10px;
+    text-align: center;
+}
+#spot img{
+    width:50%;
+    border-radius: 5px;
+}
+#pot div img{
+    justify-content: center;
 }
 
 /* Footer */

@@ -1,16 +1,28 @@
 function getMenu(){
     let b = document.querySelector('body');
     let selector = document.querySelector('#cell');
+    let join = document.querySelector('#joinChamber');
+    join.style= "display: none;";
     selector.style= "display: block; position: absolute";
     b.style="overflow: hidden";
 }
 function hideMenu(){
     let b = document.querySelector('body');
     let selector = document.querySelector('#cell');
-    selector.style= 'display: none';
+    let join = document.querySelector('#joinChamber');
+    join.style= "display: block;";
+    selector.style= "display: none";
     b.style="overflow: scroll";
 }
 function setUpdate(){
+    //Banner 
+    let day= new Date().getDay();
+    console.log(day)
+    if(day === 1 || day === 2){
+        let message = document.getElementById('message');
+        message.style.display = "block";
+    }
+    //Date
     let now = new Date().toLocaleDateString('en-uk', { weekday:"long", month:"long", day:"numeric", year:"numeric"});
     document.getElementById('now').innerHTML = now;
     let today = new Date();
@@ -18,4 +30,5 @@ function setUpdate(){
     let hour = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
     update += " " + hour;
     document.getElementById('update').innerHTML += " " + update;
+    
 }
