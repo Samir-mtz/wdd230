@@ -101,7 +101,7 @@ h1{
 }
 #hero{
     grid-area: 1/2/3/3;
-    background-image: url("images/hero.jpg");  
+    background-image: url("../images/hero.jpg");  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
