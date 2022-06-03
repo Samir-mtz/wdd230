@@ -245,6 +245,51 @@ div p{
     justify-content: center;
 }
 
+/*Discover*/
+#places{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#discover{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    gap:15px; 
+    align-content: center;
+    align-items: center;
+}
+.discover-data{
+    height: 100%;
+    border-top:2px solid #f16e80;
+    border-bottom:2px solid #f16e80;
+    align-self: center;
+}
+.discover-data h2{
+    margin-top:3%;
+    text-align: center;
+}
+.discover-data p{
+    font-size: 17px;
+    margin-top:8%;
+    text-align: justify;
+}
+#discover div img{
+    width:100%;
+}
+#discover div img:hover{
+    box-shadow: 3px 2px 5px rgb(36, 36, 36);
+}
+
+#discover div img[data-src] {
+    filter: blur(0.2em);
+}
+
+#discover div img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+/*end Discover*/
 /* Footer */
 footer{
     display: flex;

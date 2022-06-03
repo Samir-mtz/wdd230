@@ -82,5 +82,13 @@
     nav{
         display: none;
     }
-    
+    /*Discover*/
+    #discover{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    #discover div img:hover{
+        box-shadow: none;
+    }
+    /*end Discover*/
 }

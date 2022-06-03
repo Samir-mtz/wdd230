@@ -90,5 +90,10 @@
     nav{
         display: none;
     }
+    /*Discover*/
+    #discover div img:hover{
+        box-shadow: none;
+    }
+    /*end Discover*/
     
 }
