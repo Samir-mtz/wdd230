@@ -74,7 +74,7 @@
     }
     #join{
         grid-area: 4/1/5/3;
-        height: 15vh;
+        height: min-content;
     }
     #spot{
         grid-area: 5/1/6/3;
