@@ -310,7 +310,7 @@ div p{
     margin: 0 auto;
     margin-top: 20px;
 }
-#join-title{
+.join-title{
     text-align:center;
     color: #fff;
     font-size: 35px;
@@ -387,6 +387,17 @@ form ::placeholder{
 }
 form textarea{
     margin-top: 0px;
+}
+#ty{
+    margin:0;
+    height: 100vh;
+    width: 100%;    
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),url("../images/join.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#ty div{
+    padding-top:20%;
 }
 /*end Form*/
 /* Footer */
