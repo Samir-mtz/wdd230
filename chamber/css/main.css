@@ -290,6 +290,105 @@ div p{
 }
 
 /*end Discover*/
+
+/*Join the chamber*/
+#main-join{
+    margin:0;
+    width: 100%;
+    padding-top:3%;
+    padding-bottom:5%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),url("../images/join.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#form-content{
+    border-radius: 10px;
+    background-color: #172B4D;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#join-title{
+    text-align:center;
+    color: #fff;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px black; 
+}
+form{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+form label{
+    font-weight: bold;
+    color: #fff;
+    /* background: transparent; */
+}
+form select{
+    border-radius: 5px;
+}
+form input, form label, form textarea, form select{
+    margin-bottom:30px ;
+    /* border-radius: 5px; */
+    border: none;
+}
+form input{
+    color: #fff;
+    border-bottom: 2.5px solid #fff;
+    background: transparent;
+}
+form input:focus{
+    outline:none;
+    border-bottom: 2.5px solid #f16e80;
+    background: transparent;
+    color: #fff;
+}
+form textarea, #bd{
+    grid-column: 1/3;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    /* justify-self: center; */
+}
+form textarea{
+    border: 1.5px solid #fff;
+    background: transparent;
+}
+form textarea:focus{
+    outline:none;
+    border: 1.5px solid #f16e80;
+    background: transparent;
+    color: #fff;
+}
+form ::placeholder{
+    color:#f16e80
+}
+
+#send{
+    grid-column: 1/3;
+    width: 50%;
+    color: #fff;
+    font-size:20px;
+    cursor: pointer;
+    background: #f16e80;
+    transition: all 0.4s ease-in-out!important;
+    border: none;
+    border-bottom: 5px solid #f32d48;
+    padding: 10px;
+    border-radius:5px;
+    justify-self: center;
+}
+
+#send:hover{
+    background: #ff9aa7;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 75%);
+    transform: translateY(-5px)!important;
+}
+form textarea{
+    margin-top: 0px;
+}
+/*end Form*/
 /* Footer */
 footer{
     display: flex;

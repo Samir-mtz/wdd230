@@ -91,4 +91,13 @@
         box-shadow: none;
     }
     /*end Discover*/
+    /*Join*/
+    #form-content{
+        width: 80%;
+    }
+    form{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    /*end Join*/
 }
