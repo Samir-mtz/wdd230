@@ -1,5 +1,5 @@
 {
-    "image":["../images/empresas/pemex.png", "../images/empresas/cfe.jpeg", "../images/empresas/femsa.svg", "../images/empresas/bimbo.png", "../images/empresas/cemex.png", "../images/empresas/banorte.jpg", "../images/empresas/telmex.jpg", "../images/empresas/televisa.jpg", "../images/empresas/gnp.jpeg"],
+    "image":["images/empresas/pemex.png", "images/empresas/cfe.jpeg", "images/empresas/femsa.svg", "images/empresas/bimbo.png", "images/empresas/cemex.png", "images/empresas/banorte.jpg", "images/empresas/telmex.jpg", "images/empresas/televisa.jpg", "images/empresas/gnp.jpeg"],
     "name":["PEMEX", "CFE", "FEMSA", "BIMBO", "CEMEX", "BANORTE", "TELMEX", "TELEVISA", "GNP"],
     "address":["CALLE AGUSTIN LARA NO. 69-B", "AV. 20 DE NOVIEMBRE NO. 1060", "AV. INDEPENDENCIA NO. 985-A", "AV. LIBERTAD NO. 495", "20 DE NOVIEMBRE ESQ JUAREZ", "CALLE MATAMOROS NO. 225", "CALLE SEBASTIAN ORTIZ NO.549","AV. 5 DE MAYO NO. 1683","DANIEL SOTO NO 354"],
     "state":["Jalisco", "México", "Durango", "Veracruz", "Ciudad de México", "Ciudad de México", "Campeche", "Ciudad de México", "Chihuahua"],
