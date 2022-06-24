@@ -11,7 +11,7 @@ listbutton.addEventListener("click", () => {
 	display.classList.remove("grid");
 });
 function getData() {
-    fetch("/js/data.json")
+    fetch("js/data.json")
         .then(response => {
             return response.json();
         })
