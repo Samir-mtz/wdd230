@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
     <title>Discover</title>
 </head>
-<body  onload="getData()">
+<body onload="setUpdate(), getData()">
     <header>
         <div id="message">
             <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
@@ -25,17 +26,17 @@
                 <li><button id="exit"><img src="images/exit.png" alt="menu" onclick="hideMenu()"></button></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html">contact</a></li>
             </ul>
         </div>
-        <img src="images/logo.webp" alt="logo" id="logo"/>
+        <a href="index.html"><img src="images/logo.webp" alt="logo" id="logo"/></a>
         <nav>
             <ul>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html">contact</a></li>
             </ul>
         </nav>
 
@@ -48,7 +49,7 @@
             <p id="now">Some text</p>
         </div>
     </header>
-    <main id="main-directory">
+    <main id="main-directory" >
         <div class="menu">
             <button id="grid">Grid</button>
             <button id="list">List</button>
@@ -58,7 +59,7 @@
         </article>
     </main>
     <footer>
-        <img src='images/logo.webp' data-src="images/logo.webp" alt="logo"/>
+        <a href="index.html"><img src="images/logo.webp" alt="logo"/></a>
         <div>
             <p>Av. Pdte. Masaryk 67, Polanco</p>
             <p>Miguel Hidalgo CDMX</p>
@@ -74,5 +75,4 @@
     </footer>
 </body>
 <script src="js/directory.js"></script>
-<script src="js/main.js"></script>
 </html>
