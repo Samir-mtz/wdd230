@@ -27,6 +27,9 @@ table tr td{
 #titles th{
     padding: 5px;
 }
+#special{
+    background-color: rgb(0, 47, 100);
+}
 .dark{
     background-color: rgb(35, 94, 162);
     color: white;
