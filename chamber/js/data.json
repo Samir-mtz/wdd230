@@ -1,0 +1,8 @@
+{
+    "image":["images/empresas/pemex.png", "images/empresas/cfe.jpeg", "images/empresas/femsa.svg", "images/empresas/bimbo.png", "images/empresas/cemex.png", "images/empresas/banorte.jpg", "images/empresas/telmex.jpg", "images/empresas/televisa.jpg", "images/empresas/gnp.jpeg"],
+    "name":["PEMEX", "CFE", "FEMSA", "BIMBO", "CEMEX", "BANORTE", "TELMEX", "TELEVISA", "GNP"],
+    "address":["CALLE AGUSTIN LARA NO. 69-B", "AV. 20 DE NOVIEMBRE NO. 1060", "AV. INDEPENDENCIA NO. 985-A", "AV. LIBERTAD NO. 495", "20 DE NOVIEMBRE ESQ JUAREZ", "CALLE MATAMOROS NO. 225", "CALLE SEBASTIAN ORTIZ NO.549","AV. 5 DE MAYO NO. 1683","DANIEL SOTO NO 354"],
+    "state":["Jalisco", "México", "Durango", "Veracruz", "Ciudad de México", "Ciudad de México", "Campeche", "Ciudad de México", "Chihuahua"],
+    "number":["+63 (259) 150-1695","+67 (837) 372-3618","+99 (659) 357-8264","+51 (290) 629-3280","+66 (878) 819-6328","+50 (206) 751-2187","+63 (277) 558-8835","+33 (799) 208-3331","+67 (017) 875-4546"],
+    "url":["https://www.pemex.com/Paginas/default.aspx", "https://www.cfe.mx/Pages/default.aspx", "https://www.femsa.com/es/", "https://www.grupobimbo.com/", "https://www.cemexmexico.com/", "https://www.banorte.com/", "https://telmex.com/", "https://www.televisa.com/", "https://www.gnp.com.mx/"]
+}

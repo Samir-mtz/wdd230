@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 5%;
+}
+picture{
+    display:block;
+    text-align:center;
+    
+}
+picture img{
+    width: 400px;
+    height: 300px;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}

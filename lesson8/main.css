@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    text-align: center;
+}
+table tr td{
+    padding: 5px;
+}
+.title-footer{
+    background-color: rgb(98, 202, 231);
+    padding: 10px;
+}
+#titles{
+    background-color: rgb(0, 47, 100);
+    color: white;
+    font-size:20px;
+}
+#titles th{
+    padding: 5px;
+}
+#special{
+    background-color: rgb(0, 47, 100);
+}
+.dark{
+    background-color: rgb(35, 94, 162);
+    color: white;
+}
+
+.light{
+    background-color: rgb(103, 157, 219);
+    color: rgb(49, 49, 49);
+}

@@ -1,0 +1,592 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size:12px;
+}
+header{
+    background-color:#172B4D;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#message{
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    display:none;
+
+}
+
+#logo{
+    width: 15%;
+    padding:10px;
+    border-radius: 15px;
+}
+
+#menu{
+    display: none;
+}
+#cell{
+    display: none;
+}
+header img{
+    width: 10%;
+    padding: 5px;
+}
+
+
+nav li{
+    display: inline-block;
+    font-size: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: min-content;
+    padding:10px;
+}
+nav li a:hover{
+    text-decoration: none;
+    color: #f16e80;
+}
+#social-media{
+    justify-content:center;
+    text-align: center;
+}
+#now{
+    font-size: 18px;
+}
+#date{
+    display: block;
+    padding:10px;
+    margin-bottom:1%;
+    width:90%;
+    background-color:#2d518e;
+}
+#date p{
+    text-align: center;
+    color: #fff;
+}
+@media (max-width: 32.5em){
+    nav li{
+        padding:2%;
+        display: block;
+        border-bottom: 1px solid #2d518e;
+    }
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+#content{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 33% 33% 33%;
+    grid-gap: 10px;
+}
+h1{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color:#f16e80;
+    text-shadow: 1px 1px 1px black;
+}
+.container{
+    background-color:bisque;
+    height:100%;
+}
+#hero{
+    grid-area: 1/2/3/3;
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+#hero span {
+    position:absolute;
+    left: 10px;
+    bottom:10px;
+    padding:10px 15%;
+    border-radius:10px;
+    background:#172B4D;
+    color:white;
+    font-size:1.5em;
+}
+#joinChamber{
+    position: absolute;
+    right:5%;
+    bottom:5%;
+}
+.btn{
+    padding:2%;
+    border-radius:10px;
+    border:none;
+    background-color: #f16e7fc7;
+    text-shadow: 1px 1px 2px black;
+    color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #f16e80;
+    text-shadow: none;
+    cursor:pointer;
+}
+#join-now{
+    padding-top: 10px;
+    width: 60px;
+    height: 20px;
+    margin:0 auto;
+    margin-top: 10px;
+}
+/*Event*/
+#event{
+    grid-area: 1/1/2/2;
+    text-align: center;
+    display:grid;
+}
+#event a, #event p, #event h3{
+    height: min-content;
+    align-self: center;
+    padding:10px;
+}
+#event p{
+    text-align: justify;
+    font-size:12px;
+}
+#event a{
+    font-size:12px;
+    color:#f16e80;
+}
+/* #event h3{
+    
+} */
+/*End event*/
+/*Weather*/
+#weather{
+    grid-area: 2/1/3/2;
+    text-align: center;
+}
+#icon-status{
+    margin:0 auto;
+    margin-top: 5px;
+    display: block;
+    width:20%;
+}
+#description, #status{
+    display: inline-block;
+}
+#weather h3, h4{
+    text-align:center;
+    margin-top: 5px;
+}
+.small-data{
+    font-size: 12px;
+    /* margin-left: 5px; */
+    padding:5px;
+}
+/*End weather*/
+/*New Release*/
+#newRelease{
+    grid-area: 3/2/4/3;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#newRelease h3{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+#newRelease img{
+    width: 20%;
+    margin: 0 auto;
+}
+#newRelease p{
+    align-self: center;
+    justify-self: center;
+    text-align: justify;
+}
+/*End new Release*/
+/*Start Join*/
+#join{
+    grid-area: 3/1/4/2;
+    display:grid;
+    
+}
+#join h3, #join button{
+    height: min-content;
+    align-self: center;
+    justify-self: center;
+    padding:10px;
+    
+}
+#join p{
+    text-align: center;
+}
+#join button{
+    border-radius: 10px;
+    
+}
+/*End Join*/
+div p{
+    padding:10px;
+}
+#spot{
+    grid-area: 1/3/4/4;
+    display:grid;
+    grid-template-rows:  min-content min-content min-content;
+}
+#spot div{
+    width:90%;
+    background-color:#f16e80;
+    justify-self: center;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align: center;
+}
+#spot img{
+    width:50%;
+    border-radius: 5px;
+}
+#pot div img{
+    justify-content: center;
+}
+
+/*Discover*/
+#places{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#discover{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    gap:15px; 
+    align-content: center;
+    align-items: center;
+}
+.discover-data{
+    height: 100%;
+    border-top:2px solid #f16e80;
+    border-bottom:2px solid #f16e80;
+    align-self: center;
+}
+.discover-data h2{
+    margin-top:3%;
+    text-align: center;
+}
+.discover-data p{
+    font-size: 17px;
+    margin-top:8%;
+    text-align: justify;
+}
+#discover div img{
+    width:100%;
+}
+#discover div img:hover{
+    box-shadow: 3px 2px 5px rgb(36, 36, 36);
+}
+
+#discover div img[data-src] {
+    filter: blur(0.2em);
+}
+
+#discover div img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+/*end Discover*/
+
+/*Join the chamber*/
+#main-join{
+    margin:0;
+    width: 100%;
+    padding-top:3%;
+    padding-bottom:5%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),url("../images/join.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#form-content{
+    border-radius: 10px;
+    background-color: #172B4D;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.join-title{
+    text-align:center;
+    color: #fff;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px black; 
+}
+form{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+form label{
+    font-weight: bold;
+    color: #fff;
+    /* background: transparent; */
+}
+form select{
+    border-radius: 5px;
+}
+form input, form label, form textarea, form select{
+    margin-bottom:30px ;
+    /* border-radius: 5px; */
+    border: none;
+}
+form input{
+    color: #fff;
+    border-bottom: 2.5px solid #fff;
+    background: transparent;
+}
+form input:focus{
+    outline:none;
+    border-bottom: 2.5px solid #f16e80;
+    background: transparent;
+    color: #fff;
+}
+form textarea, #bd{
+    grid-column: 1/3;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    /* justify-self: center; */
+}
+form textarea{
+    border: 1.5px solid #fff;
+    background: transparent;
+}
+form textarea:focus{
+    outline:none;
+    border: 1.5px solid #f16e80;
+    background: transparent;
+    color: #fff;
+}
+form ::placeholder{
+    color:#f16e80
+}
+
+#send{
+    grid-column: 1/3;
+    width: 50%;
+    color: #fff;
+    font-size:20px;
+    cursor: pointer;
+    background: #f16e80;
+    transition: all 0.4s ease-in-out!important;
+    border: none;
+    border-bottom: 5px solid #f32d48;
+    padding: 10px;
+    border-radius:5px;
+    justify-self: center;
+}
+
+#send:hover{
+    background: #ff9aa7;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 75%);
+    transform: translateY(-5px)!important;
+}
+form textarea{
+    margin-top: 0px;
+}
+#ty{
+    margin:0;
+    height: 100vh;
+    width: 100%;    
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),url("../images/join.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#ty div{
+    padding-top:20%;
+}
+/*end Form*/
+
+
+/*directory*/
+
+
+#main-directory {
+	margin: 0 auto;
+	border: 1px solid #bbb;
+	padding: 0.5rem;
+	max-width: 80%;
+	background-color: #172B4D;
+	font-family: "Caveat", cursive;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #2d518e;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+}
+
+article,
+section {
+	margin: 0.75rem;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+}
+.grid a{
+    color: #f16e80;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: flex;
+	align-items: center;
+}
+.list section:nth-child(ODD){
+    background-color: #fff;
+    color: #000;
+}
+.list section:nth-child(odd) a{
+    color: #f16e80;
+}
+.list section:nth-child(even){
+    background-color: #2d518e;
+    color: #fff;
+}
+.list section:nth-child(even) a{
+    color: #f16e80;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 1rem;
+	text-align: left;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+
+section img {
+	height: 90px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+@media (min-width: 700px) {
+    
+	.list section img {
+		display: block;
+	}
+}
+@media (max-width: 32.5rem) {
+	#main-directory {
+        margin: 0 auto;
+        border: 1px solid #bbb;
+        /* padding: 0.5rem; */
+        max-width: 100%;
+        background-color: #eee;
+        font-family: "Caveat", cursive;
+    }
+    section{
+        margin: 2px;
+    }
+    section h3{
+        font-size: 1rem;
+    }
+    .list section > *{
+        margin:0 5px 0 5px;
+    }
+}
+
+
+/*end directory*/
+/* Footer */
+footer{
+    display: flex;
+    background-color:#172B4D;
+    color:#fff;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer img{
+    width:12%;
+    padding:2%;
+    border-radius: 35px;
+}
+
+footer div{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+#footer-info{
+    display: block;
+    padding:10px;
+    margin-bottom:1%;
+    flex:100%;
+    text-align: center;
+}
+
+
+

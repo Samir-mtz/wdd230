@@ -1,0 +1,36 @@
+
+table th, td{
+    text-align: center;
+    padding:10px;
+
+}
+.title{
+    background-color:antiquewhite;
+}
+
+#primary{
+    background-color: #172B4D;
+    color: #fff;
+}
+#secondary{
+    background-color: #f16e80;
+    color: #000;
+}
+#background{
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #000;
+}
+#text{
+    background-color: #000000;
+    color: #fff;
+}
+
+@media (max-width: 32.5em){
+    table th, td{
+        text-align: center;
+        padding-left:3px;
+        padding-right:3px;
+        padding-bottom:10px;
+    }
+}
