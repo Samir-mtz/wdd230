@@ -25,5 +25,5 @@ function setUpdate(){
     let hour = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
     update += " " + hour;
     document.getElementById('update').innerHTML += " " + update;
-    
+
 }
