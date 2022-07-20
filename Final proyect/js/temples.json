@@ -1,0 +1,7 @@
+{
+    "name":["San Diego California Temple","Washington D.C. Temple","Mexico City Mexico Temple","Tijuana Mexico Temple"],
+    "image":["img/san_diego.jpeg", "img/washington.jpeg","img/cdmx.jpg", "img/tijuana.png" ],
+    "address":["7474 Charmant Drive <br> San Diego CA 92122-5000 <br> United States","9900 Stoneybrook Drive <br> Kensington MD 20895-3199 <br> United States","Avenida 510 #90 <br> Col. San Juan de Aragon 07950 <br> Distrito Federal, Mexico","Paseo Del Rio 6832 Esquina Campestre Oriente Col 3 RA Etapa Rio Tijuana<br> 22226 Tijuana <br> Baja California, Mexico"],
+    "phone":["+1 858-622-0991","+1 301-588-0650","+52 55-5003-3700","+52 664-969-2690"],
+    "milestones":[["7 April 1984    Announced","27 February 1988    Groundbreaking","25 April 1993      Dedicated"],["15 November 1968      Announced","7 December 1968     Groundbreaking","19 November 1974   Dedicated","14 August 2022      Rededicated"],["3 April 1976    Announced","25 November 1979    Groundbreaking","2 December 1983    Dedicated","16 November 2008    Rededicated","13 September 2015     Rededicated"],["2 October 2010      Announced","18 August 2012      Groundbreaking","13 December 2015       Dedicated"]]
+}

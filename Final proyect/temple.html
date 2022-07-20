@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Inicio | Empresa </title>
+</head>
+<body onload="hideTemple()">
+    <header>
+        <!-- Menu -->
+        <div id="cell">
+            <ul>
+                <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
+                <li><a href="/">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+            </ul>
+        </div>
+        <!-- End Menu -->
+        <nav>
+            <img src="img/logo.png" alt="logo" />
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
+            </ul>
+        </nav>
+        <h1>TEMPLES</h1>
+    </header>
+    <main>
+        <div id="temples">
+            <div class="sale-container">
+                <a onclick="showTemple(0)">
+                    <div class="miniatura" id="temple1">
+                        <p class="galeria">More information</p>
+                    </div>
+                </a>
+                <h3>San Diego California Temple</h3>
+                <button class="boton" onclick="showTemple(0)">More information</button>
+                <br>
+            </div>
+    
+            <div class="sale-container">
+                <a onclick="showTemple(1)">
+                    <div class="miniatura" id="temple2">
+                        <p class="galeria">More information</p>
+                    </div>
+                </a>
+                <h3>Washington D.C. Temple</h3>
+                <button class="boton" onclick="showTemple(1)">More information</button>
+                <br>
+            </div>
+
+            <div id="temple-description" class="descriptionTemple">
+                <button id="salir"><img src="img/icons/exit.png" alt="menu" onclick="hideTemple()"></button>
+                <h2 id="templename">Salt Lake Temple</h2>
+                <img src="img/principal-temple.jpg" alt="salt-lake-temple" id="temple-img">
+                <div id="right-side-temple">
+                    <div id="descripcion-text">
+                        <div>
+                            <h3>ADRESS</h3>
+                            <p id="adress">50 West North Temple Street</p>
+                            <p id="temple-phone">Telephone: (+1) 801-240-2640</p>
+                        </div>
+                        <div>
+                            <h3>SERVICES</h3>
+                            <p>Clothing rental available</p>
+                            <p>NO cafeteria food served</p>
+                            <p>NO patron housing available</p>
+                            <p>Distribution center nearby</p>
+                        </div>
+                    </div>
+                    <div id="milestones">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sale-container">
+                <a onclick="showTemple(2)">
+                    <div class="miniatura" id="temple3">
+                        <p class="galeria">More information</p>
+                    </div>
+                </a>
+                <h3>Mexico City Mexico Temple</h3>
+                <button class="boton" onclick="showTemple(2)">More information</button>
+                <br>
+            </div>
+    
+            <div class="sale-container">
+                <a onclick="showTemple(3)">
+                    <div class="miniatura" id="temple4">
+                        <p class="galeria">More information</p>
+                    </div>
+                </a>
+                <h3>Tijuana Mexico Temple</h3>
+                <button class="boton" onclick="showTemple(3)">More information</button>
+                <br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo.png" alt="logo" class="logo-footer"/>    
+        <div>
+            <p>4867 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <p>©Copyright 2022 Temple In & Suits</p>
+            <a href="https://goo.gl/maps/oDgyktX7uxpsoRno9" target="_blank">Location map</a>
+        </div>
+        <div id="social-footer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/icons/facebook.png" alt="facebook icon" class="icon-social"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icons/instagram.png" alt="instagram icon" class="icon-social"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icons/twitter.png" alt="twitter icon" class="icon-social"></a>
+        </div>
+    </footer>
+    <script src="js/temple.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

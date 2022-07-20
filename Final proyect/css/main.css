@@ -1,0 +1,761 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+a{
+    color:#EC9A9A;
+}
+h2{
+    background-color: #457B9D;
+    /* margin-top:3%; */
+    margin-bottom:30px;
+    color:white;
+    text-align: center;
+}
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),  url("../img/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Navegeacion*/
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+    justify-content: center;
+}
+
+nav ul {
+    width: 580px;
+    align-self: center;
+    padding-left: 100px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+
+nav ul li a:hover {
+    padding-bottom: 3px;
+    color: rgb(18, 113, 151);
+    /*cambiar por color secundario*/
+    border-bottom: 2px solid rgb(18, 113, 151);
+    /*cambiar por color secundario*/
+}
+
+/*End navegacion*/
+/*Titulo principal*/
+header>h1,
+header>h3 {
+    margin-top: 30vh;
+    text-align: center;
+    padding: 20px;
+    color:white;
+    text-shadow: 3px 3px 1px black;
+}
+header h1{
+    font-size: 50px;
+}
+header>h3 {
+    margin-top: 2vh;
+    font-size:30px;
+}
+
+/*end titulo*/
+/*main*/
+main {
+    overflow: hidden;
+    /* padding: 3%; */
+}
+/*end main*/
+/*menu*/
+#menu{
+    display:none;
+}
+#cell{
+    display:none;
+}
+/*end menu*/
+/*temple description*/
+#temple-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}   
+#temple-description h2{
+    width: 100%;
+    text-align: center;
+}
+#temple-description img{
+    width: 25%;
+    border-radius: 10px;
+}
+#right-side-temple{
+    align-self: center;
+}
+#descripcion-text{
+    padding: 10px;
+    background-color: #F7ECDE;
+    border-radius: 10px;
+    /* border: 3px dotted red; */
+}
+#descripcion-text div{
+    display: inline-block;
+    padding-right: 80px;
+}
+#discover-temples h3{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+#discover-temples a{
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #EC9A9A;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#discover-temples a:hover{
+    background-color: #e38585;
+    transition-duration: 0.5s;
+}
+
+#exit{
+    margin-left:95%;
+    margin-top:1%;
+    width:35px;
+    background-color: transparent;
+    border:none;
+}
+#exit:hover{
+    cursor: pointer;
+}
+#exit img{
+    width:100%;
+}
+
+#salir{
+    margin-left:95%;
+    margin-top:1%;
+    width:35px;
+    background-color: transparent;
+    border:none;
+}
+#salir:hover{
+    cursor: pointer;
+}
+#salir img{
+    width:100%;
+}
+
+.descriptionTemple{
+    background-color: #fff;
+    padding-bottom: 3%;
+    display: none;
+
+}
+/*end temple description*/
+/*weather*/
+#weather{
+    margin-top: 3%;
+    width: 100%;
+    height: 50vh;
+    background-image: url("../img/weather.jpg");
+    background-size: cover;
+}
+#weather-days{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.day-weather{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    margin: 30px;
+}
+.day-weather h4{
+    font-size: 20px;
+}
+/*end weater*/
+/*About us*/
+#about-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #F7ECDE;
+    padding-bottom: 3%;
+}
+#about-us h2{
+    width: 100%;
+}
+#about-us h3{
+    font-size: 35px;
+}
+#about-us div{
+    padding: 20px;
+    width: 40%;
+    align-self: center;
+}
+#about-us p{
+    text-align: justify;
+}
+#reception{
+    width:20%;
+    border: 10px double #EC9A9A;
+    padding:8px;
+}
+/*end about us*/
+/*Social media*/
+#social-media{
+
+    text-align: center;
+}
+.media{
+    background-color: #1D3557;
+    display: inline-block;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 0px 30px 0px 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.media:hover{
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+}
+.media a{
+    display: block;
+    font-size: 20px;
+}
+/*end social media*/
+/*reservation*/
+#special-h2{
+    margin-bottom: 0;
+}
+.reservation{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/reservation.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.reservation h3{
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    font-size: 35px;
+    color:#fff;
+    text-shadow: 1px 1px 2px black;
+}
+.reservation-text{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
+.reservation-text a{
+    padding: 10px;
+    background-color: #EC9A9A;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.reservation-text a:hover{
+    background-color: #e38585;
+    transition-duration: 0.5s;
+}
+.reservation-text p{
+    color:#fff;
+    font-size: 20px;
+    padding-right: 20px;
+    text-shadow: 1px 1px 2px black;
+
+}
+/*end reservation*/
+
+/*Temples*/
+#temples{
+    padding-top: 3%;
+    text-align: center;
+    background-color: #F7ECDE;
+}
+#temples h3{
+    margin-top: 15px;
+}
+.sale-container{
+    display: inline-block;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+    border-radius: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    background-color: #f1f1f1;
+    width: 450px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.sale-container a{
+    text-decoration: none;
+}
+.miniatura p{
+    margin:auto;
+    color: #fff;
+}
+.miniatura{
+    display: flex;
+    background-image: url("imagenes/Venta2/Frente1.jpg");
+    border-radius: 10px 10px 0px 0px;
+    height: 250px;
+    width: 100%;
+    background-size:cover;
+    object-position: 50% 50%;
+}
+.galeria{
+    font-size:22px;
+    visibility: hidden;
+}
+.sale-container a div:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+    background-size:cover;
+    background-blend-mode: darken;
+    transition: all 0.2s ease-in-out 0s;
+}
+.sale-container a div:hover .galeria{
+    visibility: visible;
+}
+.boton{
+    padding:5px;
+    border-radius:5px;
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #1D3557;
+    color: #fff;
+    border:1px solid #003972;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: #457B9D;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.icons-sale{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #000;
+    background-color: #f1f1f1;
+    border-radius: 0px 0px 10px 10px;
+}
+.icons-sale img{
+    display: inline-block;
+}
+.icons-sale img{
+    vertical-align: middle;
+    width:6%;
+}
+.icons-sale p{
+    display: inline-block;
+    display: inline-block;
+    padding-right:10px;
+}
+/*end Temples*/
+/*Temples background*/
+#temple1{
+    background-image: url("../img/san_diego.jpeg");
+    background-size:cover;
+}
+#temple2{
+    background-image: url("../img/washington.jpeg");
+    background-size:cover;
+}
+#temple3{
+    background-image: url("../img/cdmx.jpg");
+    background-size:cover;
+    
+}
+#temple4{
+    background-image: url("../img/tijuana.png");
+    background-size:cover;
+}
+/*end temples*/
+/*reservation*/
+/* Informacion de contacto */
+#contacto{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color:#1d3557dd;
+    height:45vh;
+    justify-content: center;
+    color:#fff;
+    margin-bottom: 3%;
+}
+#imagen-contacto{
+    justify-self: center;
+    width: 90%;
+}
+#imagen-contacto iframe{
+    height: 100%;
+    width: 100%;
+}
+#direccion{
+    margin:auto;
+    text-align: center;
+}
+
+#metodos{
+    display:grid;
+    grid-template-columns:20% 80%;
+    grid-template-rows: 33% 33% auto;
+    justify-content:center;
+    align-items:center;
+}
+#phone{
+    width:40%;
+}
+#email{
+    width:50%;
+}
+#facebook{
+    width:45%;
+}
+
+
+/* End Contacto info */
+#main-reservation{
+    background-image: url("../img/reservation-form.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#form-content{
+    border-radius: 10px;
+    background-color: #1d3557dd;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.join-title{
+    text-align:center;
+    color: #fff;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px black; 
+}
+form{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+form label{
+    font-weight: bold;
+    color: #fff;
+    /* background: transparent; */
+}
+form select{
+    border-radius: 5px;
+}
+form input, form label, form textarea, form select{
+    margin-bottom:30px ;
+    /* border-radius: 5px; */
+    border: none;
+}
+form input{
+    color: #fff;
+    border-bottom: 2.5px solid #fff;
+    background: transparent;
+}
+form input:focus{
+    outline:none;
+    border-bottom: 2.5px solid #EC9A9A;
+    background: transparent;
+    color: #fff;
+}
+form textarea, #bd{
+    grid-column: 1/3;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    /* justify-self: center; */
+}
+form textarea{
+    border: 1.5px solid #fff;
+    background: transparent;
+}
+form textarea:focus{
+    outline:none;
+    border: 1.5px solid #EC9A9A;
+    background: transparent;
+    color: #fff;
+}
+form ::placeholder{
+    color:#EC9A9A
+}
+
+#send{
+    grid-column: 1/3;
+    width: 50%;
+    color: #fff;
+    font-size:20px;
+    cursor: pointer;
+    background: #EC9A9A;
+    transition: all 0.4s ease-in-out!important;
+    border: none;
+    border-bottom: 5px solid #f32d48;
+    padding: 10px;
+    border-radius:5px;
+    justify-self: center;
+}
+
+#send:hover{
+    background: #EC9A9A;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 75%);
+    transform: translateY(-5px)!important;
+}
+form textarea{
+    margin-top: 0px;
+}
+#ty{
+    margin:0;
+    height: 100vh;
+    width: 100%;    
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),url("../images/join.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#ty div{
+    padding-top:20%;
+}
+input[type="date"]{
+    color:#EC9A9A;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    background-color:#fff;
+}
+/*end Form*/
+/*end reservation*/
+/*Services*/
+
+.know-more img{
+    width: 25%;
+}
+.know-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.know-more div{
+    padding: 20px;
+}
+.know-more div h3{
+    padding-bottom: 25px;
+}
+
+.know-more div a{
+    padding: 10px;
+    background-color: #EC9A9A;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.know-more div a:hover{
+    background-color: #e38585;
+    transition-duration: 0.5s;
+}
+/*end services*/
+/*footer*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1D3557;
+    color:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo-footer{
+    border-radius: 10px;
+    width: 15%;
+}
+.icon-social{
+    width: 40px;
+}
+/*end footer*/
+
+
+@media (max-width:32.5rem){
+    #contacto{
+        height:80vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    
+    #imagen-contacto iframe{
+        height: 45vh;
+        width: 350px;
+    }
+    #metodos{
+        width: 80%;
+        padding:5%;
+        align-self: center;
+        gap:10%;
+        justify-self:center;
+    }
+    #phone{
+        width: 70%;
+    }
+    #email{
+        width: 95%;
+    }
+    #facebook{
+        width: 90%;
+    }
+
+    /*Menu*/
+    #menu{
+        display:inline;
+        width:30%;
+        justify-self: end;
+        margin-left:50%;
+        background: transparent;
+        border:none;
+    }
+    #menu img{
+        width:100%;
+        vertical-align: middle;
+    }
+    #cell{
+        margin-left:30%;
+        text-align: center;
+        position: absolute;
+        z-index: 100;
+        width: 70%;
+        background-color: #1D3557;
+        height: 100vh;
+    }
+    #cell ul li{
+        list-style: none;
+        padding:5%;
+        border-bottom:1px solid rgb(77, 120, 171);
+    }
+    #cell ul li a{
+        color:#fff;
+        text-decoration: none;
+        /* background-color: #6ba4dd; */
+    }
+    #cell button{
+        background: transparent;
+        border: none;
+    }
+    #exit{
+        margin-left:-80%;
+        margin-top:5%;
+        width:12%;
+    }
+    #exit img{
+        width:100%;
+    }
+    
+    nav ul li{
+        display:none;
+    }
+    .title{
+        padding-left:30px;
+    }
+
+    /*home*/
+    #temple-description img{
+        width: 50%;
+    }
+    #right-side-temple{
+        text-align: center;
+    }
+    #descripcion-text div{
+        padding-right: 0;
+    }
+    #weather{
+        height: auto;
+    }
+    #reception{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #about-us div{
+        width: 90%;
+    }
+    #about-us h3{
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    #about-us{
+        display: inline-block;
+        text-align: center;
+    }
+    .logo-footer{
+        width: 40%;
+    }
+    /*end home*/
+    /*temple*/
+    #salir img{
+        width:100%;
+    }
+    #salir{
+        margin-top:3%;
+        width:100%;
+    }
+    .sale-container{
+        width: 380px;
+    }
+    /*end temple*/
+    /*services*/
+    .know-more{
+        display: block;
+    }
+    .know-more img{
+        width: 85%;
+    }
+    /*end-services*/
+    /*contacto*/
+    #form-content{
+        width: 85%;
+    }
+    /*end contacto*/
+    /*footer*/
+    footer div p{
+        padding: 10px;
+    }
+    #social-footer{
+        margin-top: 10px;
+    }
+}

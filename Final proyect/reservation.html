@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Inicio | Empresa </title>
+</head>
+<body>
+    <header>
+        <!-- Menu -->
+        <div id="cell">
+            <ul>
+                <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
+                <li><a href="/">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+        <!-- End Menu -->
+        <nav>
+            <img src="img/logo.png" alt="logo" />
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="services.html">Services</a></li>
+                <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
+            </ul>
+        </nav>
+        <h1>RESERVATIONS</h1>
+    </header>
+    <main id="main-reservation">
+        <h2>Get In Touch</h2>
+        <div id="contacto">
+            <div id="imagen-contacto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d49621.96161952979!2d-77.1495019!3d38.9839918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cbb76a24022d%3A0x26b279f76a2bcd0d!2sBethesda%2C%20Maryland%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1658161057891!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="metodos">
+                <a href="https://www.facebook.com/people/Inmobiliaria-Mejgar/100064113634884/" target="_blank"><img src="img/icons/Facebook.png" alt="facebook" id="facebook"></a>
+                <a href="https://www.facebook.com/" target="_blank">@TempleIn&Suits</a>
+                <a href="https://www.facebook.com/people/Inmobiliaria-Mejgar/100064113634884/" target="_blank"><img src="img/icons/instagram.png" alt="facebook" id="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank">@TempleIn&Suits</a>
+                <a href="https://www.facebook.com/people/Inmobiliaria-Mejgar/100064113634884/" target="_blank"><img src="img/icons/twitter.png" alt="facebook" id="facebook"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank">@TempleIn&Suits</a>
+            </div>
+        </div>
+        <div id="form-content">
+            <h2>Book Now</h2>
+            <form method="post" autocomplete="off">
+                <label for="name">Name</label>
+                <input type="text" placeholder="*" id="name" name="name" required>
+                <label for="lastname">Last Name</label>
+                <input type="text" placeholder="*" id="lastname" name="lastname" required>
+                <label for="phone">Phone</label>
+                <input type="number" placeholder="*" name="phone" id="phone" required>
+                <label for="email">Email</label>
+                <input type="email" placeholder="*" name="email" id="email" required>
+                <label for="rooms">Number of rooms</label>
+                <input type="number" placeholder="*" name="rooms" id="rooms" required>
+                <label for="kindofroom">Kind of room</label>
+                <select name="kindofroom" id="kindofroom">
+                    <option value="single">single</option>
+                    <option value="double">double</option>
+                </select>                                                       
+                <label for="country">Country</label>  
+                <input type="text" placeholder="*" name="country" id="country" required>
+                <label for="country">State</label>  
+                <input type="text" placeholder="*" name="state" id="state" required>
+                <label for="date">Arrival date</label>
+                <input type="date" name="date" id="date" required>
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Submit" id="send">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img src="img/logo.png" alt="logo" class="logo-footer"/>    
+        <div>
+            <p>4867 Montgomery Ln #300, Bethesda, MD 20814</p>
+            <p>©Copyright 2022 Temple In & Suits</p>
+            <a href="https://goo.gl/maps/oDgyktX7uxpsoRno9" target="_blank">Location map</a>
+        </div>
+        <div id="social-footer">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/icons/facebook.png" alt="facebook icon" class="icon-social"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/icons/instagram.png" alt="instagram icon" class="icon-social"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/icons/twitter.png" alt="twitter icon" class="icon-social"></a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
